@@ -19,17 +19,17 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Shops',
-      url: '/folder/Outbox',
+      url: '/shops',
       icon: 'cash'
     },
     {
       title: 'Sales',
-      url: '/folder/Favorites',
+      url: '/sales',
       icon: 'list'
     },
     {
       title: 'Inovice',
-      url: '/folder/Archived',
+      url: '/invoice',
       icon: 'return-up-forward'
     }
   ];

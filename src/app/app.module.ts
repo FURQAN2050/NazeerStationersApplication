@@ -8,9 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddProductModalPage } from './products/add-product-modal/add-product-modal.page';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,AddProductModalPage],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -24,4 +25,6 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(){}
+}

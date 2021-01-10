@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  // 'folder/Inbox'
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'folder/products',
     pathMatch: 'full'
   },
   {
@@ -18,7 +19,19 @@ const routes: Routes = [
   {
     path: 'add-product-modal',
     loadChildren: () => import('./products/add-product-modal/add-product-modal.module').then( m => m.AddProductModalPageModule)
-  }
+  },
+  {
+    path: 'shops',
+    loadChildren: () => import('./shops/shops/shops.module').then( m => m.ShopsPageModule)
+  },
+  {
+    path: 'sales',
+    loadChildren: () => import('./sales/sales/sales.module').then( m => m.SalesPageModule)
+  },
+  {
+    path: 'invoice',
+    loadChildren: () => import('./invoice/invoice/invoice.module').then( m => m.InvoicePageModule)
+  },
 ];
 
 @NgModule({
